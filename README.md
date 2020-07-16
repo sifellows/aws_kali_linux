@@ -35,14 +35,11 @@ ip=127.0.0.1
 * changed username and password to the kali user
 ```
 
-
 ## Allow more than root to access the system
 ```bash
 sudo vi /etc/X11/Xwrapper.config
 ```
-```
-allowed_users=anybody
-```
+> allowed_users=anybody
 
 ## start services
 ```bash
@@ -91,6 +88,7 @@ service nessusd start
 Download free trial version (use burner email address)
 Copy to Kali VM and install
 Use code in burner email address
+See https://docs.rapid7.com/insightvm/basic-deployment-plan/ for guide to setting up and running
 
 ## PDF readers
 ```
