@@ -27,13 +27,12 @@ sudo chsh -s /bin/bash kali
 ```bash
 sudo vi /etc/xrdp/xrdp.ini
 ```
-```
-autorun=sesman-any
-max_bpp=16
-[sesman-any]
-ip=127.0.0.1
-* changed username and password to the kali user
-```
+
+    autorun=sesman-any
+    max_bpp=16
+    [sesman-any]
+    ip=127.0.0.1
+    * changed username and password to the kali user
 
 ## Allow more than root to access the system
 ```bash
