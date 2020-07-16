@@ -7,7 +7,7 @@ sudo apt-get dist-upgrade -y
 ```
 ## Get required packages
 ```bash
-sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
+sudo apt-get install xrdp lxde-core lxde xfce4 tigervnc-standalone-server -y
 ```
 ## Set the session manager
 ```bash
