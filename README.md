@@ -64,3 +64,34 @@ sudo service xrdp-sesman status
 
 ## Test: use an rdp client
 Connecting to the Kali IP with an RDP client and the new user's password should present you with the Kali desktop.
+
+# Transfer files to Kali
+```
+scp -i kali_linux.pem <file> <ip-addr/hostname>:<path>
+```
+
+# Additional software
+## PDF readers
+```
+sudo apt install -y xpdf okular
+```
+
+## Git
+```
+sudo apt install -y git
+```
+
+## Guacamole (needed???)
+```
+git clone https://github.com/MysticRyuujin/guac-install.git /tmp/guac-install
+cd /tmp/guac-install/
+sudo ./guac-install.sh --nomfa --installmysql --mysqlpwd S3cur3Pa$$w0rd --guacpwd P@s$W0rD
+systemctl status tomcat9 guacd mysql
+```
+## Install TigerVNC server (needed???)
+```
+sudo apt install -y tigervnc-standalone-server
+mkdir ~/.vnc/ && wget https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-project/-/raw/master/nethunter-fs/profiles/xstartup -O ~/.vnc/xstartup
+vncserver :1
+```
+
