@@ -71,6 +71,27 @@ scp -i kali_linux.pem <file> <ip-addr/hostname>:<path>
 ```
 
 # Additional software
+## Nessus
+Go to https://www.tenable.com/downloads/nessus
+Download (64-bit) version for Kali (e.g. 8.11.0)
+```
+dpkg -i Nessus-8.11.0-debian6_amd64.deb
+```
+
+### If Nessus keeps looping through initialization stage...
+```
+service nessusd stop 
+/opt/nessus/sbin/nessuscli fix --reset 
+/opt/nessus/sbin/nessuscli fetch --register ACTIVATION-CODE-HERE  
+/opt/nessus/sbin/nessusd -R 
+service nessusd start
+```
+
+## InsightVM (was Nexpose)
+Download free trial version (use burner email address)
+Copy to Kali VM and install
+Use code in burner email address
+
 ## PDF readers
 ```
 sudo apt install -y xpdf okular
