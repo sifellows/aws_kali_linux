@@ -86,8 +86,11 @@ service nessusd start
 
 ## InsightVM (was Nexpose)
 Download free trial version (use burner email address)
+
 Copy to Kali VM and install
+
 Use code in burner email address
+
 See https://docs.rapid7.com/insightvm/basic-deployment-plan/ for guide to setting up and running
 
 ## PDF readers
